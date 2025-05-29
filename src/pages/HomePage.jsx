@@ -6,7 +6,7 @@ function HomePage() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("https://e-com-backend-production-31d7.up.railway.app/api/products/products")
+      .get("https://e-com-backend-rjun.onrender.com/api/products/products")
       .then((res) => {
         console.log("API raw response:", res.data);
         const responseData = res.data;

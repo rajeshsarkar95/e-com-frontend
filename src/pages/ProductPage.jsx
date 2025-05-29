@@ -11,7 +11,7 @@ function ProductPage() {
     if (!id) return;
     setLoading(true);
     axios
-      .get(`http://localhost:5000/api/products/products/${id}`)
+      .get(`https://e-com-backend-rjun.onrender.com/api/products/products/${id}`)
       .then((res) => {
         console.log("API Response:", res.data);
         setProduct(res.data);

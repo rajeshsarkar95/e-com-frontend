@@ -17,7 +17,7 @@ function SignupPage() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://e-com-backend-production-31d7.up.railway.app/api/users/register",
+        "https://e-com-backend-rjun.onrender.com/api/users/register",
         formData
       );
       console.log("Registration success:", response.data);
